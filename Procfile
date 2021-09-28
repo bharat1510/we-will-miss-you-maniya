@@ -1,0 +1,1 @@
+web: gunicorn farewellparty.wsgi --log-file -

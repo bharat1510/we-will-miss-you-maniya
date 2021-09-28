@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block mainContent %}
+
+	
+	<section class="bg-dark" style="height: 100vh;">
+		<div class="container-flex">
+			<div class="text-center mb-3">
+				<span style="color: white; font-size: 40px; font-weight: 800;">Hey Mannu! </span><br>
+				<span style="color: white; font-size: large;">Use + and - buttons to navigate map</span>
+				{% if user.is_authenticated %}
+					&nbsp;&nbsp;&nbsp;<a href="{% url 'logout' %}"><span style="color: red; font-size: large;"><i class="fa fa-sign-out"></i> &nbsp;Logout</span></a>
+				{% endif %}
+			</div>
+			<div class="wrapper px-md-4">			
+				<div class="row no-gutters" style="height: 700px;" >
+					<div class="col-md-12 order-md-first d-flex align-items-stretch">
+						<div id="map" class="map"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+{% endblock mainContent %}
