@@ -10,7 +10,7 @@
 				<span style="color: white; font-size: 40px; font-weight: 800;">Hey Mannu! </span><br>
 				<span style="color: white; font-size: large;">Use + and - buttons to navigate map</span>
 				{% if user.is_authenticated %}
-					&nbsp;&nbsp;&nbsp;<a href="{% url 'logout' %}"><span style="color: red; font-size: large;"><i class="fa fa-sign-out"></i> &nbsp;Logout</span></a>
+					<br/><a href="{% url 'logout' %}"><span style="color: red; font-size: large;"><i class="fa fa-sign-out"></i> &nbsp;Logout</span></a>
 				{% endif %}
 			</div>
 			<div class="wrapper px-md-4">			
